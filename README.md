@@ -138,6 +138,6 @@ If you use this tool, please cite both:
 
 Seghier ML, Price CJ. (2016) Visualising inter-subject variability in fMRI using threshold-weighted overlap maps. *Scientific Reports*. 6:20170. doi:10.1038/srep20170
 
-**This Python implementation:**
+**This Python implementation (with extra option, e.g. `analyse_all_voxels`):**
 
 Voets, NL, Parker Jones, O, Seghier, ML, Stacey, R, Plaha, P. (2025) Separating the forest from the palm trees: Individual variation in a presurgical language mapping task. *Manuscript in preparation*.
