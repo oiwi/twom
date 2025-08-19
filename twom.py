@@ -17,7 +17,7 @@ def parse_arguments():
     parser.add_argument('--radius_units', type=str, default='mm', choices=['mm', 'voxels'], help='Units of radius, either "mm" or "voxels" (default=mm).')
     parser.add_argument('--maskfile', type=str, default=None, help='Optional mask file (e.g. mask.nii.gz).')
     parser.add_argument('--analyse_all_voxels', action='store_true',
-                       help='Analyse all voxels instead of relevant voxels (default: use relevant voxels like MATLAB).')
+                       help='Analyse all voxels instead of relevant voxels (default: use relevant voxels, following MATLAB implementation).')
     parser.add_argument('--min_subjects', type=int, default=2,
                        help='Minimum subjects required for relevant voxels auto-mask (default=2).')
     parser.add_argument('--min_cluster_size', type=int, default=10,
@@ -238,7 +238,7 @@ def calculate_voxel_twom_vectorized(sphere_data, t_thresholds, weights, t_min, t
     # Shape: (n_neighbors, n_thresholds)
     proportions = exceedances.mean(axis=0)
     
-    # Take maximum across sphere (like MATLAB) for each threshold
+    # Take maximum across sphere (following MATLAB code) for each threshold
     # Shape: (n_thresholds,)
     max_proportions = proportions.max(axis=0)
     
@@ -284,7 +284,7 @@ def process_volume(subject_files, mask_file, prob_min, prob_max, weight_type, ra
         mask = np.ones((ny, nx, nz), dtype=bool)
         print("Using all voxels")
     else:
-        print("Using MATLAB default: auto-generating relevant voxels mask")
+        print("Using default inherited from MATLAB code: auto-generating relevant voxels mask")
         print("Focus: Group-level consistency (excludes subject-specific activations)")
         print("To analyse all voxels instead, use --analyse_all_voxels flag")
         
