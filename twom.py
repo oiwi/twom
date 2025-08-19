@@ -286,7 +286,7 @@ def process_volume(subject_files, mask_file, prob_min, prob_max, weight_type, ra
     else:
         print("Using MATLAB default: auto-generating relevant voxels mask")
         print("Focus: Group-level consistency (excludes subject-specific activations)")
-        print("To analyze all voxels instead, use --analyse_all_voxels flag")
+        print("To analyse all voxels instead, use --analyse_all_voxels flag")
         
         t_thresholds_temp, _ = calculate_thresholds_and_weights(prob_min, prob_max, df=df)
         t_min = np.min(t_thresholds_temp)
@@ -309,8 +309,6 @@ def process_volume(subject_files, mask_file, prob_min, prob_max, weight_type, ra
     n_masked_voxels = len(mask_coords)
     print(f"Processing {n_masked_voxels} masked voxels")
 
-    print("Using VECTORIZED voxel-by-voxel processing (Strategy 1: vectorized thresholds)")
-    
     with tqdm(total=n_masked_voxels, desc="Processing Voxels", unit="voxel") as pbar:
         for i, coord in enumerate(mask_coords):
             
