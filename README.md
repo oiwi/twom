@@ -1,6 +1,6 @@
 # TWOM - Threshold-Weighted Overlap Mapping
 
-Vectorised Python implementation of TWOM for characterising individual variation in neuroimaging. Quantifies spatial overlap across multiple statistical maps.
+Vectorised, command-line Python implementation of TWOM for characterising individual variation in neuroimaging. Quantifies spatial overlap across multiple statistical maps. 
 
 ## Quick Setup
 
