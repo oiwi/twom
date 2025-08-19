@@ -5,7 +5,7 @@ Vectorised, command-line Python implementation of TWOM for characterising indivi
 ## Quick Setup
 
 ```bash
-git clone https://github.com/yourusername/twom.git
+git clone https://github.com/oiwi/twom.git
 cd twom
 chmod +x create_env.sh
 ./create_env.sh
