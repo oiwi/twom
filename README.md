@@ -12,6 +12,18 @@ chmod +x create_env.sh
 conda activate twom
 ```
 
+## Try the Examples
+
+```bash
+# Run example analysis with demo data
+cd examples
+chmod +x *.sh
+./twom_example.sh      # Basic TWOM analysis
+./plot_example.sh      # Plot individual subject effects
+```
+
+Example data: 3 control subjects from language mapping study (Voets et al. 2025).
+
 ## Usage
 
 ### 1. Get Help
