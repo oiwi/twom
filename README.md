@@ -134,7 +134,7 @@ Dependencies installed automatically with `create_env.sh`
 
 If you use this tool, please cite both:
 
-**Original TWOM method paper (includes Matlab code):**
+**The original TWOM method paper (includes Matlab code):**
 
 Seghier ML, Price CJ. (2016) Visualising inter-subject variability in fMRI using threshold-weighted overlap maps. *Scientific Reports*. 6:20170. doi:10.1038/srep20170
 
