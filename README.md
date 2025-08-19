@@ -42,7 +42,7 @@ python twom.py file_list.txt --radius 2 --radius_units voxels
 
 ### 3. Comprehensive Analysis
 ```bash
-# Analyze all voxels (not just group-consistent ones)
+# Analyse all voxels (not just group-consistent ones)
 python twom.py file_list.txt --analyse_all_voxels --radius 2 --radius_units voxels
 ```
 
@@ -59,7 +59,7 @@ This creates a bar plot showing effect sizes across subjects at the specified vo
 
 ## Key Options
 
-- `--analyse_all_voxels` - Analyze all brain voxels (default: relevant voxels only)
+- `--analyse_all_voxels` - Analyse all brain voxels (default: relevant voxels only)
 - `--radius 2` - Sphere radius in mm or voxels (default: 1)
 - `--radius_units voxels` - Units for radius: 'mm' or 'voxels' (default: mm)
 - `--input_dir /path/` - Directory prefix for input files
@@ -76,7 +76,7 @@ This creates a bar plot showing effect sizes across subjects at the specified vo
 **Relevant Voxels (Default):**
 - Focuses on group-consistent activations
 - Requires activation in ≥2 subjects with clusters ≥10 voxels
-- Faster processing, emphasizes reproducible effects
+- Faster processing, emphasises reproducible effects
 
 **All Voxels:**
 - Comprehensive analysis including single-subject effects
