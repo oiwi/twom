@@ -112,7 +112,11 @@ Plotting generates matplotlib figures showing individual subject effects at spec
 
 ## Requirements
 
-Python 3.8+, installed automatically with `create_env.sh`
+- Python 3.8+
+- Conda (for automated setup)
+- **Tested on:** macOS (should work on Linux/Windows but not extensively tested)
+
+Dependencies installed automatically with `create_env.sh`
 
 ## Citation
 
